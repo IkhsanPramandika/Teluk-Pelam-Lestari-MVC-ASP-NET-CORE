@@ -1,0 +1,598 @@
+﻿@model Admin.Models.CombinedModel
+
+@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Teluk Pelam Lestari</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Teluk Pelam Lestari</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentangkami">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publikasi">Publikasi & Informasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#karir">Karir</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" asp-controller="Guests" asp-action="Login">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Produk Berkualitas</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Mengusung tagline "Quality Shrimp for Everyone" Perkelompokan Budidaya Teluk Pelam Lestari menyuplai produk perlautan dengan kualitas terbaik untuk pasar domestik maupun internasional</p>
+                    <a class="btn btn-primary btn-xl" href="#produk">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Tentang Kami-->
+    <section class="page-section" id="tentangkami">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Lini Bisnis</h2>
+            <hr class="divider" />
+            <h2 class="text-center mt-0">Kami menghadirkan produk yang berkualitas</h2>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Pengelolahan Udang</h3>
+                        <p class="text-muted mb-0">Melakukan penangkapan udanga dan pemrosesan udang. Menghasilkan produk berkualitas terbaik dan secara bertahap melakukan hilirisasi produk</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Hilirisasi Produk</h3>
+                        <p class="text-muted mb-0">Fokus pada hilirisasi produk dengan upaya pemasaran yang kuat baik didalam negeri maupun luar negeri, mengoptimalkan penetrasi pasar global dalam perdagangan ekspor dan impor udang</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Call to action-->
+    <section class="hero is-link" id="produk">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <figure class="image is-4by3">
+                            <img src="~/assets/img/background.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="column is-two-thirds">
+                        <p class="title">
+                            Perkelompokan Budidaya Teluk Pelam Lestari
+                        </p>
+                        <p class="subtitle">
+                            Perusahaan Perkelompokan Budidaya Teluk Pelam Lestari fokus pada budidaya udang, khususnya dalam pengembangan dan operasional tambak udang Vanamei. Berlokasi di Jl. Tanjung Kapal, Paret satu, Rupat-Riau, perusahaan ini memiliki komitmen untuk memproduksi udang dengan standar kualitas tinggi. Dengan menggunakan praktik budidaya yang berkelanjutan dan inovatif, perusahaan ini bertujuan untuk memenuhi permintaan pasar lokal dan global atas produk udang berkualitas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="hero is-link" id="produk">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <p class="title">
+                            Apa itu Udang Vaname?
+                        </p>
+                        <p class="subtitle">
+                            Udang Vaname, atau sering disebut Udang Windu, merupakan salah satu varietas utama udang air tawar yang paling diminati dalam industri akuakultur. Dikenal dengan ciri fisiknya yang elegan, Udang Vaname memiliki tubuh memanjang dengan warna cokelat khas yang menarik. Keunggulan utama dari udang ini adalah pertumbuhannya yang cepat dan adaptabilitas yang luar biasa terhadap lingkungan beragam.
+                            <br><br>
+                            Dalam industri akuakultur, Udang Vaname menjadi primadona karena kemampuannya tumbuh dengan cepat, memungkinkan masa panen yang relatif singkat. Kualitas adaptasi udang ini memungkinkannya untuk hidup dalam berbagai kondisi lingkungan, menjadikannya pilihan ideal untuk budidaya baik dalam skala besar maupun kecil.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-4by3">
+                            <img src="~/img/udangvaname.jpg" alt="Udang Vaname">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lamaran Karir-->
+    <section class="hero is-link" id="produk">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title has-text-centered">Yuk cobain udang vaname dari tambak kami </h1>
+                <p class="subtitle has-text-centered">Udang Vaname dari Teluk Pelam Lestari merupakan udang dengan kualitas internasional</p>
+                <div class="columns is-vcentered">
+                    <div class="column is-half">
+                        <div class="card-image">
+                            <figure class="has-text-centered">
+                                <img src="~/img/price.png"  alt="Placeholder image"/>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="card shadow">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Beli Udang Vaname</h6>
+                            </div>
+                            <div class="card-body">
+                <div class="row">
+                            <form id="myForm" asp-controller="Transaksis" asp-action="Create" method="post" >
+                            <!-- Isi formulir dengan input yang sesuai -->
+                            <div class="form-group">
+                                <label asp-for="Transaksi.NamaPembeli" class="control-label">Nama Pembeli :</label>
+                                <input asp-for="Transaksi.NamaPembeli" class="form-control" />
+                                <span asp-validation-for="Transaksi.NamaPembeli" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Transaksi.Status" class="control-label">Jenis Udang :</label>
+                                <select asp-for="Transaksi.Status" class="form-control" id="Status">
+                                    <option value="Udang Kecil">Udang Kecil</option>
+                                    <option value="Udang Sedang">Udang Sedang</option>
+                                    <option value="Udang Besar">Udang Besar</option>
+                                </select>
+                                <span asp-validation-for="Transaksi.Status" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Transaksi.TotalBeli" class="control-label">Total Beli :</label>
+                                <input asp-for="Transaksi.TotalBeli" class="form-control" id="TotalBeli" />
+                                <span asp-validation-for="Transaksi.TotalBeli" class="text-danger"></span>
+                            </div>
+                            <div class="form-group total-harga">
+                                <label asp-for="Transaksi.TotalHarga" class="control-label">Total Harga :</label>
+                                <input asp-for="Transaksi.TotalHarga" class="form-control" id="TotalHarga" readonly value="0" />
+                                <span asp-validation-for="Transaksi.TotalHarga" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Transaksi.ReleaseDate" class="control-label">Tanggal :</label>
+                                <input asp-for="Transaksi.ReleaseDate" class="form-control" type="date" id="ReleaseDate" readonly value="<%= DateTime.Now.ToString(" yyyy-MM-dd") % />
+                                <span asp-validation-for="Transaksi.ReleaseDate" class="text-danger"></span>
+                            </div>
+                            <!-- Tombol Submit -->
+                            <div class="form-group">
+                                <input type="submit" value="Pesan Udang" class="btn btn-primary" />
+                            </div>
+                        </form>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const releaseDateInput = document.getElementById('ReleaseDate');
+                                const today = new Date().toISOString().split('T')[0];
+                                releaseDateInput.setAttribute('value', today); // Menetapkan nilai tanggal ke hari ini pada saat halaman dimuat
+
+                                const jenisUdang = document.getElementById('Status');
+                                const totalBeliInput = document.getElementById('TotalBeli');
+                                const totalHargaInput = document.getElementById('TotalHarga');
+
+                                jenisUdang.addEventListener('change', function () {
+                                    calculateTotal();
+                                });
+
+                                totalBeliInput.addEventListener('input', function () {
+                                    calculateTotal();
+                                });
+
+                                function calculateTotal() {
+                                    const jumlahBeli = parseInt(totalBeliInput.value) || 0;
+                                    let harga = 0;
+
+                                    switch (jenisUdang.value) {
+                                        case 'Udang Kecil':
+                                            harga = 10000;
+                                            break;
+                                        case 'Udang Sedang':
+                                            harga = 15000;
+                                            break;
+                                        case 'Udang Besar':
+                                            harga = 20000;
+                                            break;
+                                        default:
+                                            harga = 0;
+                                            break;
+                                    }
+
+                                    const total = jumlahBeli * harga;
+                                    totalHargaInput.value = total.toString(); // Konversi ke string sebelum ditampilkan
+                                }
+
+                                calculateTotal(); // Hitung total saat halaman dimuat 
+                            });
+                        </script>
+                                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('#myForm').submit(function (event) {
+                                                event.preventDefault(); // Mencegah perilaku default formulir
+
+                                                // Ambil data formulir
+                                                var formData = $(this).serialize();
+
+                                                // Kirim data formulir secara asinkron menggunakan AJAX
+                                                $.ajax({
+                                                    type: 'POST',
+                                                    url: $(this).attr('action'), // Ambil URL dari atribut action formulir
+                                                    data: formData,
+                                                    success: function (response) {
+                                                        // Berhasil mengirim data
+                                                        // Lakukan tindakan yang diperlukan (misalnya, tampilkan pesan sukses)
+                                                        alert('Pesanan anda berhasil dikirim!');
+
+                                                        // Di sini Anda dapat memperbarui halaman jika diperlukan
+                                                        // Contoh: memuat ulang bagian tertentu dari halaman
+                                                        // $('#targetElement').html(response);
+                                                    },
+                                                    error: function () {
+                                                        // Terjadi kesalahan saat mengirim data
+                                                        // Lakukan penanganan kesalahan jika diperlukan
+                                                        alert('Terjadi kesalahan saat mengirim data.');
+                                                    }
+                                                });
+                                            });
+                                        });
+                                    </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact-->
+    <section class="hero">
+        <div class="hero-body">
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Perdagangan Domestik</p>
+                        <p class="title">14+</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Ekspor Luar Negeri</p>
+                        <p class="title">3+</p>
+                    </div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div>
+                        <p class="heading">Ton Produksi Udang</p>
+                        <p class="title">100+</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Kontak-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <figure class="has-text-centered" id="publikasi">
+                    <img src="\assets\img\image36.png" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h2>PETA EKSPOR DAN IMPORT</h2>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="has-text-centered">PUBLIKASI DAN INFORMASI TERKINI</h2>
+
+
+    <div class="columns">
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="~/img/ikann.png" />" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">PT Perikanan Indonesia Unit Muara Baru Cabang Jakarta memberangkatkan 2 kontainer ikan cakalang bervolume 51 ton ke Jepang</p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        PT Perikanan Indonesia Unit Muara Baru Cabang Jakarta memberangkatkan 2 kontainer ikan cakalang bervolume 51 ton ke Jepang dari Cabang Jakarta, dengan valuasi Rp1,3 miliar.
+
+                        <br>
+                        <time datetime="2016-1-1">
+                            Corcomm / Yola
+                            Berita
+                            08 November 2023
+                        </time>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="~/img/ikan2.png" />" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">PT Perikanan Indonesia dan ID FOOD Group Implementasikan Program Kolaborasi TJSL di Cianjur, Jawa Barat</p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        Dalam rangka meningkatkan dampak positif terhadap program Tanggung Jawab Sosial dan Lingkungan (TJSL), PT Perikanan Indonesia dan ID FOOD Group melaksanakan program kolaborasi TJSL di Desa Cinangsih, Cianjur, Jawa Barat.
+                        <br>
+                        <time datetime="2016-1-1">
+                            Corcomm / Yola
+                            Berita
+                            07 December 2023
+                        </time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Lamaran Karir-->
+    <section class="hero is-link" id="karir">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title has-text-centered">Bergabunglah Bersama Kami!</h1>
+                <p class="subtitle has-text-centered">Teluk Pelam Lestari membuka kesempatan bagi individu yang bersemangat untuk bergabung dengan tim kami.</p>
+                <div class="columns is-vcentered">
+                    <div class="column is-half">
+                        <div class="card-image">
+                            <figure class="has-text-centered">
+                                <img src="~/img/loker1.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="card shadow">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Lowongan Kerja</h6>
+                            </div>
+                            <div class="card-body">
+                                <form id="karirForm" asp-controller="Karirs" asp-action="Create">
+                                    <!-- Isi formulir dengan input yang sesuai -->
+                                    <div class="form-group">
+                                        <label asp-for="Karir.Nama" class="control-label"></label>
+                                        <input asp-for="Karir.Nama" class="form-control" required />
+                                        <span asp-validation-for="Karir.Nama" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Karir.email" class="control-label">Email</label>
+                                        <input asp-for="Karir.email" class="form-control" required />
+                                        <span asp-validation-for="Karir.email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Karir.Jabatan" class="control-label"></label>
+                                        <select asp-for="Karir.Jabatan" class="form-control" required>
+                                            <option value="">Pilih Jabatan</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Operator">Operator</option>
+                                            <option value="Nelayan">Nelayan</option>
+                                        </select>
+                                        <span asp-validation-for="Karir.Jabatan" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Karir.Berkas" class="control-label"></label>
+                                        <input asp-for="Karir.Berkas" class="form-control" type="file" required />
+                                        <span asp-validation-for="Karir.Berkas" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Kirim Lamaran" class="btn btn-primary" />
+                                    </div>
+                                </form>
+                                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                <script>
+                                    $(document).ready(function () {
+                                        $('#karirForm').submit(function (event) {
+                                            event.preventDefault(); // Mencegah perilaku default formulir
+                                            // Membuat instance FormData untuk mengambil data formulir termasuk file
+                                            var formData = new FormData($(this)[0]);
+                                            // Mengirim data formulir termasuk file secara asinkron menggunakan AJAX
+                                            $.ajax({
+                                                type: 'POST',
+                                                url: $(this).attr('action'), // Ambil URL dari atribut action formulir
+                                                data: formData,
+                                                contentType: false,
+                                                processData: false,
+                                                success: function () {
+                                                    // Berhasil mengirim data
+                                                    alert('Lamaran anda berhasil dikirim!');
+                                                },
+                                                error: function () {
+                                                    // Terjadi kesalahan saat mengirim data
+                                                    alert('Terjadi kesalahan saat mengirim data.');
+                                                }
+                                            });
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+    </section>
+
+    <section class="page-section" id="karir">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Tertarik lebih lanjut ?</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Kamu tertarik dengan perusahaan kami ? Kamu bisa menuliskan sesuatu dibawah ini !  </p>
+                </div>
+            </div>
+
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Nama" data-sb-validations="required" />
+                            <label for="name">Nama</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="Email" data-sb-validations="required,email" />
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" data-sb-validations="required" />
+                            <label for="phone">Phone</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="perihal" type="text" placeholder="Perihal" data-sb-validations="required"></input>
+                            <label for="perihal">Perihal</label>
+                            <div class="invalid-feedback" data-sb-feedback="perihal:required">A perihal is required.</div>
+                        </div>
+                        <!-- Pesan input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Pesan" style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Pesan</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Pesan kamu berhasil terkirim ke email kami </div>
+                              
+                                <br />
+                               
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak-->
+    <div class="container" id="kontak">
+        <h1 class="text-center mb-5">Kontak Kami</h1>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Alamat</h3>
+                    <p class="text-muted mb-0">Jalan Tangjung Kapal, Paret Satu, Rupat-Riau.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Email</h3>
+                    <p class="text-muted mb-0">Pelamlestari@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Telepon</h3>
+                    <p class="text-muted mb-0">+62895309851115</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer-->
+    @RenderBody()
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - TELUK PELAM LESTARI</div></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+﻿@model Admin.Models.Transaksi
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Buat Transaksi</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Create Transaksi</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Di dalam file .cshtml atau bagian View -->
+                        <form asp-controller="Transaksis" asp-action="Create" method="post">
+                            <!-- Isi formulir dengan input yang sesuai -->
+                            <div class="form-group">
+                                <label asp-for="NamaPembeli" class="control-label">Nama Pembeli :</label>
+                                <input asp-for="NamaPembeli" class="form-control" />
+                                <span asp-validation-for="NamaPembeli" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Status" class="control-label">Jenis Udang :</label>
+                                <select asp-for="Status" class="form-control" id="Status">
+                                    <option value="Udang Kecil">Udang Kecil</option>
+                                    <option value="Udang Sedang">Udang Sedang</option>
+                                    <option value="Udang Besar">Udang Besar</option>
+                                </select>
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="TotalBeli" class="control-label">Total Beli :</label>
+                                <input asp-for="TotalBeli" class="form-control" id="TotalBeli" />
+                                <span asp-validation-for="TotalBeli" class="text-danger"></span>
+                            </div>
+                            <div class="form-group total-harga">
+                                <label asp-for="TotalHarga" class="control-label">Total Harga :</label>
+                                <input asp-for="TotalHarga" class="form-control" id="TotalHarga" readonly value="0" />
+                                <span asp-validation-for="TotalHarga" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="ReleaseDate" class="control-label">Tanggal :</label>
+                                <input asp-for="ReleaseDate" class="form-control" type="date" id="ReleaseDate" readonly value="<%= DateTime.Now.ToString(" yyyy-MM-dd") % />
+                                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+                            </div>
+                            <!-- Tombol Submit -->
+                            <div class="form-group">
+                                <input type="submit" value="Pesan Udang" class="btn btn-primary" />
+                            </div>
+                        </form>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const releaseDateInput = document.getElementById('ReleaseDate');
+                                const today = new Date().toISOString().split('T')[0];
+                                releaseDateInput.setAttribute('value', today); // Menetapkan nilai tanggal ke hari ini pada saat halaman dimuat
+
+                                const jenisUdang = document.getElementById('Status');
+                                const totalBeliInput = document.getElementById('TotalBeli');
+                                const totalHargaInput = document.getElementById('TotalHarga');
+
+                                jenisUdang.addEventListener('change', function () {
+                                    calculateTotal();
+                                });
+
+                                totalBeliInput.addEventListener('input', function () {
+                                    calculateTotal();
+                                });
+
+                                function calculateTotal() {
+                                    const jumlahBeli = parseInt(totalBeliInput.value) || 0;
+                                    let harga = 0;
+
+                                    switch (jenisUdang.value) {
+                                        case 'Udang Kecil':
+                                            harga = 10000;
+                                            break;
+                                        case 'Udang Sedang':
+                                            harga = 15000;
+                                            break;
+                                        case 'Udang Besar':
+                                            harga = 20000;
+                                            break;
+                                        default:
+                                            harga = 0;
+                                            break;
+                                    }
+
+                                    const total = jumlahBeli * harga;
+                                    totalHargaInput.value = total.toString(); // Konversi ke string sebelum ditampilkan
+                                }
+
+                                calculateTotal(); // Hitung total saat halaman dimuat 
+                            });
+                        </script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Tambahkan bagian footer dan skrip JavaScript di sini -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Additional scripts if needed -->
+</body>
+</html>

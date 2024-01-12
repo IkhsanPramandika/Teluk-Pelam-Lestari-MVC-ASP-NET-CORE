@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Admin
+build_property.RootNamespace = Admin
+build_property.ProjectDir = C:\Users\mikhs\OneDrive\Dokumen\1. TUGAS KULIAH\4. SEMESTER 5\Admin\Admin\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mikhs\OneDrive\Dokumen\1. TUGAS KULIAH\4. SEMESTER 5\Admin\Admin
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Customer/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/Customer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXEN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/FormKarir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXEZvcm1LYXJpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/FormPesan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXEZvcm1QZXNhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Guests/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3Vlc3RzXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Karirs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FyaXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Karirs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FyaXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Karirs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FyaXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Karirs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FyaXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Karirs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FyaXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Produks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Produks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Produks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Produks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Produks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Transaksis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3Npc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Transaksis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3Npc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Transaksis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3Npc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Transaksis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3Npc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Transaksis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNha3Npc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mikhs/OneDrive/Dokumen/1. TUGAS KULIAH/4. SEMESTER 5/Admin/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7xb81emaud

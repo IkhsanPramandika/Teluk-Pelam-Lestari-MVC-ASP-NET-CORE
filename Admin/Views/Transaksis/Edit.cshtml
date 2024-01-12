@@ -1,0 +1,107 @@
+﻿@model Admin.Models.Transaksi
+
+@{
+    ViewData["Title"] = "Edit Transaksi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Edit Transaksi</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <!-- ... -->
+        <!-- End of Sidebar -->
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <h1>Edit Transaksi</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form asp-action="Edit">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="Id" />
+                                <div class="form-group">
+                                    <label asp-for="NamaPembeli" class="control-label"></label>
+                                    <input asp-for="NamaPembeli" class="form-control" />
+                                    <span asp-validation-for="NamaPembeli" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Status" class="control-label">Alamat</label>
+                                    <input asp-for="Status" class="form-control" />
+                                    <span asp-validation-for="Status" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="TotalBeli" class="control-label"></label>
+                                    <input asp-for="TotalBeli" class="form-control" />
+                                    <span asp-validation-for="TotalBeli" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="TotalHarga" class="control-label"></label>
+                                    <input asp-for="TotalHarga" class="form-control" />
+                                    <span asp-validation-for="TotalHarga" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ReleaseDate" class="control-label"></label>
+                                    <input asp-for="ReleaseDate" class="form-control" type="date" id="releaseDate" />
+                                    <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+                                </div>
+                                <script>
+                                    // Mendapatkan elemen input tanggal
+                                    const releaseDateInput = document.getElementById('releaseDate');
+
+                                    // Mendapatkan tanggal hari ini
+                                    const today = new Date().toISOString().split('T')[0];
+
+                                    // Mengatur nilai maksimum pada input tanggal
+                                    releaseDateInput.setAttribute('max', today);
+                                </script>
+                                <form asp-action="Delete">
+                                    <input type="hidden" asp-for="Id" />
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">Edit</button>
+                                        <a asp-action="Index" class="btn btn-secondary">Kembali</a>
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <!-- ... -->
+            <!-- End of Footer -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+    <!-- Scripts -->
+  
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Validation Scripts -->
+    <!-- ... -->
+</body>
+</html>

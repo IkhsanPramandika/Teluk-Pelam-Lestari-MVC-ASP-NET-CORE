@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Admin.Models.Transaksi>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Index Transaksi";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index Transaksi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional styles -->
+    <style>
+        /* Add any additional styles here */
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Tabel Transaksi</h6>
+            </div>
+            <div class="text-right card-header">
+                <a asp-action="Create" class="btn btn-success btn-sm btn-create">Create</a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center" id="transaksiTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Nama Pembeli</th>
+                                <th>Jenis Produk</th>
+                                <th>Total Beli</th>
+                                <th>Total Harga</th>
+                                <th>Tanggal Pembelian</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.NamaPembeli)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                                    <td>
+                                        @{
+                                            string totalBeliClass = "";
+                                            if (item.TotalBeli > 100)
+                                            {
+                                                totalBeliClass = "btn btn-sm btn-success"; // Tombol hijau
+                                            }
+                                            else if (item.TotalBeli >= 50 && item.TotalBeli <= 99.99)
+                                            {
+                                                totalBeliClass = "btn btn-sm btn-warning"; // Tombol kuning
+                                            }
+                                            else if (item.TotalBeli >= 0 && item.TotalBeli < 50)
+                                            {
+                                                totalBeliClass = "btn btn-sm btn-primary"; // Tombol biru
+                                            }
+                                        }
+                                        <button type="button" class="@totalBeliClass">@Html.DisplayFor(modelItem => item.TotalBeli) KG</button>
+                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => item.TotalHarga)</td>
+                                    <td>@item.ReleaseDate.ToString("dd/MM/yyyy")</td>
+                                    <td class="text-center">
+                                        <a href="@Url.Action("Edit", "Transaksis", new { id = item.Id })" class="btn btn-info btn-sm btn-action">
+                                            <i class="fas fa-edit"></i> Edit
+                                        </a>
+                                        <a href="@Url.Action("Details", "Transaksis", new { id = item.Id })" class="btn btn-warning btn-sm btn-action">
+                                            <i class="fas fa-info-circle"></i> Details
+                                        </a>
+                                        <a href="@Url.Action("Delete", "Transaksis", new { id = item.Id })" class="btn btn-danger btn-sm btn-action">
+                                            <i class="fas fa-trash-alt"></i> Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Additional scripts if needed -->
+</body>
+</html>
